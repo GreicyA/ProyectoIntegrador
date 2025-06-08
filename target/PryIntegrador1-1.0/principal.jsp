@@ -110,8 +110,8 @@
   <div class="sidebar">
       <h2>Menú</h2>
       <a href="principal.jsp">Principal</a>
-            <a href="#">Roles</a>
-            <a href="#">Empleados</a>
+            <a href="rol">Roles</a>
+            <a href="empleado">Empleados</a>
             <a href="LisProvee.jsp">Proveedores</a>
             <a href="#">Tipo de Seguimiento</a>
             <a href="Producto.jsp">Productos</a>

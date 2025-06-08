@@ -1,6 +1,9 @@
 model\Producto.class
 controller\ProveeControl.class
+miServlet\RolServlet.class
+controller\RolControl.class
 miServlet\DetalleImportaServlet.class
+model\Rol.class
 util\MySQLConexion.class
 controller\DetalleImportaControl.class
 model\Empleado.class
@@ -14,4 +17,5 @@ controller\EmpleadoControl.class
 model\Proveedor.class
 model\DetalleImporta.class
 model\Importacion.class
+miServlet\EmpleadoServlet.class
 controller\ProductoContol.class

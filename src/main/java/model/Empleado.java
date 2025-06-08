@@ -6,8 +6,29 @@ public class Empleado {
     private String apellido;
     private String correo;
     private String contrasena;
-    private String estado;
-    private int id_rol;
+    private boolean estado;
+    private Rol rol;
+    
+    public Empleado() {}
+    
+    public Empleado(int id_empleado, String nombre, String apellido, String correo, boolean estado, Rol rol) {
+        this.id_empleado = id_empleado;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.correo = correo;
+        this.estado = estado;
+        this.rol = rol;
+    }
+    
+    public Empleado(int id_empleado, String nombre, String apellido, String correo, String contrasena, boolean estado, Rol rol) {
+        this.id_empleado = id_empleado;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.correo = correo;
+        this.contrasena = contrasena;
+        this.estado = estado;
+        this.rol = rol;
+    }
 
     public int getId_empleado() {
         return id_empleado;
@@ -49,21 +70,24 @@ public class Empleado {
         this.contrasena = contrasena;
     }
 
-    public String getEstado() {
+    public boolean isEstado() {
         return estado;
     }
 
-    public void setEstado(String estado) {
+    public void setEstado(boolean estado) {
         this.estado = estado;
     }
 
-    public int getId_rol() {
-        return id_rol;
+    public Rol getRol() {
+        return rol;
     }
 
-    public void setId_rol(int id_rol) {
-        this.id_rol = id_rol;
+    public void setRol(Rol rol) {
+        this.rol = rol;
     }
 
-   
+    @Override
+    public String toString() {
+        return nombre + " " + apellido;
+    }
 }
